@@ -1,0 +1,9 @@
+image: gitpod/workspace-postgres
+
+tasks:
+  - name: Setup
+    init: |
+      sudo service postgresql start
+      createdb ecommerce_db
+      psql -d ecommerce_db -f data/schema.sql
+      echo "Database ready!"
