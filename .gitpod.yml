@@ -1,10 +1,10 @@
 image: gitpod/workspace-full
 
 tasks:
-  - name: Project Setup
+  - name: Setup Ecommerce DB
     init: |
-      echo "⚙️ Initializing ecommerce project..."
+      echo "⚙️ Starting init script..."
       chmod +x scripts/init_db.sh
       ./scripts/init_db.sh | tee init_output.log
     command: |
-      echo "✅ Gitpod is ready. Visit Metabase at: https://3000-$(gp url 3000)"
+      echo "✅ Setup complete. Visit Metabase at: https://3000-$(gp url 3000)"
