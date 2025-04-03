@@ -1,18 +1,18 @@
-!/bin/bash
+#!/bin/bash
 
-echo "⏳ Rebuilding containers..."
+echo "⏳ Rebuilding Docker containers..."
 docker compose down -v
 docker compose up -d
-sleep 10
+sleep 10  # Wait for PostgreSQL to be fully ready
 
-echo "📦 Copying files to container..."
+echo "📦 Copying schema and CSV files to the container..."
 docker cp data/schema.sql ecommerce_postgres:/schema.sql
 for f in data/*.csv; do docker cp "$f" ecommerce_postgres:/; done
 
-echo "📂 Importing schema..."
+echo "📂 Importing schema into ecommerce_db..."
 docker exec -i ecommerce_postgres psql -U gitpod -d ecommerce_db -f /schema.sql
 
-echo "📥 Importing CSVs..."
+echo "📥 Importing CSVs into their respective tables..."
 docker exec -it ecommerce_postgres bash -c "
 psql -U gitpod -d ecommerce_db -c \"
 \\copy orders FROM '/olist_orders_dataset.csv' DELIMITER ',' CSV HEADER;
@@ -27,5 +27,5 @@ psql -U gitpod -d ecommerce_db -c \"
 \"
 "
 
-echo "✅ All data loaded successfully!"
-
+echo "✅ All data loaded and ready!"
+echo "🌐 Metabase will be available at: https://3000-$(gp url 3000)"

@@ -1,9 +1,9 @@
 image: gitpod/workspace-postgres
 
 tasks:
-  - name: Setup
+  - name: Init Ecommerce Project
     init: |
-      #sudo service postgresql start
-      createdb ecommerce_db
-      psql -d ecommerce_db -f data/schema.sql
-      echo "Database ready!"
+      chmod +x scripts/init_db.sh
+      ./scripts/init_db.sh
+    command: |
+      echo "✅ Gitpod is ready. Visit Metabase at: https://3000-$(gp url 3000)"
