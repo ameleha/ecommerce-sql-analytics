@@ -28,6 +28,9 @@ services:
       MB_DB_HOST: postgres
     depends_on:
       - postgres
+    volumes:
+      - metabase-data:/metabase-data
 
 volumes:
   pgdata:
+  metabase-data:
