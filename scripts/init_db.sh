@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 
 echo "⏳ Rebuilding containers..."
 docker compose down -v
