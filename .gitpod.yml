@@ -7,4 +7,4 @@ tasks:
       chmod +x scripts/init_db.sh
       ./scripts/init_db.sh | tee init_output.log
     command: |
-      echo "✅ Setup complete. Visit Metabase at: https://3000-$(gp url 3000)"
+      echo "✅ Setup complete. Visit Metabase at: $(gp url 3000)"

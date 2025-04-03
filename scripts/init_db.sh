@@ -28,4 +28,5 @@ psql -U gitpod -d ecommerce_db -c \"
 "
 
 echo "✅ All data loaded!"
-echo "🌐 Metabase: https://3000-$(gp url 3000)"
+echo "🌐 Metabase is ready → $(gp url 3000)"
+
