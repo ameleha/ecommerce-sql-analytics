@@ -1,9 +1,10 @@
 image: gitpod/workspace-postgres
 
 tasks:
-  - name: Init Ecommerce Project
+  - name: Project Setup 
     init: |
+      echo "⚙️ Initializing project..."
       chmod +x scripts/init_db.sh
-      ./scripts/init_db.sh
+      ./scripts/init_db.sh | tee init_output.log
     command: |
       echo "✅ Gitpod is ready. Visit Metabase at: https://3000-$(gp url 3000)"
