@@ -1,9 +1,9 @@
-image: gitpod/workspace-postgres
+image: gitpod/workspace-full
 
 tasks:
-  - name: Project Setup 
+  - name: Project Setup
     init: |
-      echo "⚙️ Initializing project..."
+      echo "⚙️ Initializing ecommerce project..."
       chmod +x scripts/init_db.sh
       ./scripts/init_db.sh | tee init_output.log
     command: |
