@@ -38,17 +38,6 @@ Importable into any Metabase instance via:
 
 ---
 
-## 🖼️ Visual Overview (Optional Image Previews)
-
-| Dashboard                    | Preview                                  |
-|-----------------------------|------------------------------------------|
-| Delivery Performance        | ![delivery](dashboards/delivery_dashboard.png) |
-| Product Category Performance| ![category](dashboards/category_performance.png) |
-| Seller City Comparisons     | ![seller](dashboards/seller_dashboard.png) |
-| Review Score Distribution   | ![reviews](dashboards/reviews.png)       |
-
----
-
 ## 📂 Project Structure
 
 ```bash
@@ -64,6 +53,8 @@ ecommerce-sql-analytics/
 ---
 
 ## 🚀 Setup Instructions
+
+```bash
 
 # Run the following from your Gitpod terminal to get everything up and running:
 
