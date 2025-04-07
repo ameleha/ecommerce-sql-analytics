@@ -24,9 +24,8 @@ This project includes interactive and exportable dashboards created using Metaba
 ### 🧾 PDF Snapshots
 Viewable even when Gitpod is offline:
 
-- 📄 [Ecommerce Dashboard (Full)](exports/ecommerce_dashboard.pdf)
-- 📄 [Revenue Insights Tab](exports/revenue_tab.pdf)
-- 📄 [Delivery Performance Tab](exports/delivery_tab.pdf)
+- 📄 [Sales & Revenue Tab](exports/Olists_E-Commerce_ Development_in_Brazil-Tab_1_Sales_and_Revenue.pdf)
+- 📄 [Product Preferences & Performance Tab](exports/Olists_E-Commerce_ Development_in_Brazil-Tab_2_Product_Preferences_and_Performance.pdf)
 
 ### 💾 Dashboard JSON Exports
 Importable into any Metabase instance via:
