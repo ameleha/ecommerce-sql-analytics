@@ -24,8 +24,8 @@ This project includes interactive and exportable dashboards created using Metaba
 ### 🧾 PDF Snapshots
 Viewable even when Gitpod is offline:
 
-- 📄 [Sales & Revenue Tab]()
-- 📄 [Product Preferences & Performance Tab]()
+- 📄 [Sales & Revenue Tab](exports/Tab_1_Sales_and_Revenue.pdf)
+- 📄 [Product Preferences & Performance Tab](exports/Tab_2_Product_Preferences_and_Performance.pdf)
 
 ### 💾 Dashboard JSON Exports
 Importable into any Metabase instance via:
