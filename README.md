@@ -52,6 +52,8 @@ ecommerce-sql-analytics/
 
 ---
 
+```md
+
 ## 🚀 Setup Instructions
 
 ```bash
