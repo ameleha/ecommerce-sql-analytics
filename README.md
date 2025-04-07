@@ -55,18 +55,14 @@ ecommerce-sql-analytics/
 
 ## 🚀 Setup Instructions
 
-
+```bash
 # Run the following from your Gitpod terminal to get everything up and running:
 
 # 1. Make the setup script executable
-```bash
 chmod +x scripts/init_db.sh
-```
 
 # 2. Launch Metabase and PostgreSQL containers, import schema and CSVs
-```bash
 ./scripts/init_db.sh
-```
 
 # 3. Access Metabase from:
 # https://3000-<your-gitpod-workspace>.gitpod.io
